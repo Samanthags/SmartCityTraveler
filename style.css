@@ -1,0 +1,135 @@
+/*-----NAVIGATION-------*/
+#navbar{
+overflow: hidden;
+background-color: black;
+opacity: 0.9;
+z-index: 500;      /*Keeps the navbar over imgs*/
+position: fixed;
+width: 100%;
+padding: 1px 1px;
+}
+
+#navbar:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+ .menu{
+  display: inline-block;
+}
+
+
+
+.menu{
+  text-align: center;
+  padding-left: 300px;
+  margin: 20px;
+  position: relative;
+}
+
+.menu ul{
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.menu ul li{
+  font-size: 15px;
+  display: inline-block;
+  margin-right:20px;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  padding: 20px 15px 20px 15px;
+
+}
+
+.menu li a{
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+
+.menu ul li a:hover{
+  border-bottom: 2px solid #e67e22;
+  color:white;
+  transition: all 0.5s ease;
+}
+
+/*---FOOTER ----*/
+
+footer{
+  background-color: #002366;
+  color: white;
+  padding: 10px 40px 10px 40px;
+  }
+
+  footer:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+
+.footer-text{
+  float: left;
+}
+
+
+.footer-text p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+
+.social{
+  float: right;
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}

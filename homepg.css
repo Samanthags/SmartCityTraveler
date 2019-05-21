@@ -1,0 +1,250 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+}
+
+html{
+  font-family: 'Lato', 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+
+/*-----NAVIGATION-------*/
+#navbar{
+overflow: hidden;
+background-color: black;
+opacity: 0.9;
+z-index: 500;      /*Keeps the navbar over imgs*/
+position: fixed;
+width: 100%;
+padding: 1px 1px;
+}
+
+#navbar:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+ .menu{
+  display: inline-block;
+}
+
+
+
+.menu{
+  text-align: center;
+  padding-left: 300px;
+  margin: 20px;
+  position: relative;
+}
+
+.menu ul{
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.menu ul li{
+  font-size: 15px;
+  display: inline-block;
+  margin-right:20px;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  padding: 20px 15px 20px 15px;
+
+}
+
+.menu li a{
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+
+.menu ul li a:hover{
+  border-bottom: 2px solid #e67e22;
+  color:white;
+  transition: all 0.5s ease;
+}
+
+
+
+/*----------------HEADER---------------*/
+
+
+header{
+
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(img/nyc.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position-y:-120px;
+
+}
+
+h5{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+h6{
+  color: white;
+  text-align: center;
+}
+
+#hero-container{
+  position: absolute;
+    width: 1140px;
+    top: 55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo{
+  color: #cf6d17;
+  font-size: 60px;
+  font-family: 'Bitter', serif;
+  text-align: center;
+  padding-bottom: 550px;
+
+}
+
+
+
+/*-------BUTTON--------*/
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+     border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+
+
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+
+}
+
+
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+}
+
+
+.btn-full:hover,
+.btn-full:active{
+     border: 1px solid #e67e22;
+
+
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #cf6d17;
+    color: #fff;
+
+}
+
+
+
+/*---FOOTER ----*/
+
+footer{
+  background-color: #002366;
+  color: white;
+  padding: 10px 40px 10px 40px;
+  }
+
+  footer:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+
+.footer-text{
+  float: left;
+}
+
+
+.footer-text p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+
+.social{
+  float: right;
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
