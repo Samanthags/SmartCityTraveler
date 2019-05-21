@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SignUpForm</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="homepg.html">
+  </head>
+<body>
+
+<style>
+
+
+
+
+*{box-sizing: border-box;}
+body{
+  font-family: 'Nunito', san-serif;
+  color: #fff;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(img/bridge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form{
+  max-width: 300px;
+  margin:10px auto;
+  padding: 5px 20px;
+  background:gray;
+  border-radius:8px;
+  line-height: 0.1;
+}
+
+h1{
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="username"],
+input[type="password"],
+textarea,
+select{
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin:0;
+  outline:0;
+  padding:5px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #000;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.3) inset;
+  margin-bottom: 30px;
+}
+
+
+input:focus, textarea:focus{
+  box-shadow: 0 0 5px rgba(81,203,238,1);
+  border: 1px solid rgba(81,203,238,1);
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  margin: 0 4px 8px 0;
+}
+
+select{
+  padding: 6px;
+  height:32px;
+  border-radius: 2px;
+}
+
+fieldset{
+  margin-bottom:30px;
+  border:none;
+}
+
+legend{
+  display: block;
+  margin-bottom: 8px;
+}
+
+label{
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light{
+  font-weight: 300;
+  display: inline;
+}
+
+.section{
+  background-color: #375091;
+  color: #fff;
+  height: 30px;
+  width:30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,0,0,0.2);
+  border-radius: 100%;
+}
+
+button{
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color:#375091;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #375091;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+  
+}
+
+button a:link, button a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media screen and (min-width: 680px){
+  form{
+    max-width: 580px;
+  }
+}
+
+</style>
+
+
+
+  <form action="#" method="post" onsubmit="return validation();" >
+
+    <h1 style="padding-top:20px;">SignUp</h1>
+
+  <fieldset>
+<legend><span class="section">1</span>Your Basic Info</legend>
+    <label class="" for="name">Name:</label>
+    <input type="text" name="name" id="name">
+
+    <label class="" for="email">Email:</label>
+    <input type="email" name="email" id="email">
+
+    <label class="" for="username">UserName:</label>
+    <input type="username" name="username" id="username">
+
+    <label class="" for="password">Password:</label>
+    <input type="password" name="password" id="password">
+
+
+
+    <label>Age:</label>
+    <input type="radio" name="age" value="under_18">
+    <label class="light" for="under_21">Under 21</label><br />
+
+    <input type="radio" name="age" value="over_21">
+    <label class="light" for="over_21">Over 21:</label>
+
+  </fieldset>
+
+<fieldset>
+  <legend><span class="section">2</span>Your Profile</legend>
+  <label class="" for="bio">Bio:</label>
+  <textarea style="padding:30px;" name="bio"></textarea>
+
+
+  <label for="places"> Select a Place:</label>
+  <select name="places">
+    <optgroup label="Museums">
+      <option value="naturalhs_museum">Natural History Museum</option>
+      <option value="moma_museum">MOMA Museum</option>
+      <option value="metro_museum">Metropolitan Museum of Art</option>
+      <option value="madame_museum">Madame Tussauds Museum</option>
+      <option value="ripley-museum">Ripleys_museum</option>
+      <option value="jewish_museum"> Jewish Heritage Museum</option>
+      <option value="tibet_museum">Tibet House US Museum</option>
+      <option value="seaport_museum">South Street Seaport Museum</option>
+      <option value="intrepidsea_museum">intrepid Sea Air and Space Museum</option>
+    </optgroup>
+
+    <optgroup label="SightSeeing">
+      <option value="empire">Empire State Building</option>
+      <option value="rockefeller">Rockefeller Center</option>
+      <option value="times_square">Times Square</option>
+      <option value="govenors_island">Govenors Island</option>
+      <option value="central_park">Central Park </option>
+      <option value="central_zoo">Central Park Zoo</option>
+      <option value="statue">Statue of Liberty</option>
+      <option value="seaport">South Street Seaport Museum</option>
+    </optgroup>
+
+    <optgroup label="Restaurants">
+      <option value="wolf_house">Wolfgangs Steakhouse</option>
+      <option value="ralimentari">Il buco Alimentari</option>
+      <option value="chikarashi">Chikarashi</option>
+      <option value="striphouse">Strip House</option>
+      <option value="pizza_pasta">La Pizza & La Pasta</option>
+      <option value="wichcraft">Wichcraft</option>
+      <option value="rainbow_room">Rainbow Room</option>
+      <option value="writing_room">The Writing Room</option>
+    </optgroup>
+
+
+    <optgroup label="Sports">
+      <option value="yankee_stadium">Yankee Stadium</option>
+      <option value="madison_garden">Madison Square Garden</option>
+      <option value="barclay_center">Barclay Center</option>
+    </optgroup>
+
+    <optgroup label="NightLife">
+      <option value="lavo_club">LAVO NightClub</option>
+      <option value="electric_room">Electric Room</option>
+      <option value="phd_club">PH-D at Dream Downtown</option>
+    </optgroup>
+
+
+    <optgroup label="Amusement Parks">
+      <option value="sixflags_adventure">Six Flags Great Adventure</option>
+      <option value="sixflags_harbour">Six Flags Hurricane Harbour</option>
+      <option value="coney_beach">Coney Island Beach</option>
+      <option value="splish_park">Splish Splash Water Park</option>
+      <option value="sesame_place">Sesame Place</option>
+      <option value="dorney_park">Dorney Park</option>
+      <option value="adventure_park">Adventure Theme Park</option>
+      <option value="rye_playland">Rye Playland</option>
+    </optgroup>
+
+    <optgroup label="Casinos">
+      <option value="foxwood">FoxWood</option>
+      <option value="result_world">Result World Casino</option>
+  </optgroup>
+
+  </select>
+
+  <label>Interests:(You can choose more than one)</label>
+
+  <input type="checkbox" value="interest_development" name="user_interest">
+  <label class="light" for="food">Food</label><br />
+
+  <input type="checkbox" value="interest_development" name="user_interest">
+  <label class="light" for="art">Art</label><br />
+
+
+  <input type="checkbox" value="interest_development" name="user_interest">
+  <label class="light" for="sightseeing">SightSeeing</label>
+
+</fieldset>
+
+
+
+  <button><a href="homepg.html" name="submit" type="submit" onclick="myFunction()">Sign Up!</a></button>
+    <script>
+      function myFunction() {
+      alert("Thank you for signing up with us!");
+      }
+    </script>
+
+
+
+
+    <div id="eresult" style="color:red;"></div>
+    <script type="text/javascript">
+      function validation(){
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        if(name=='' || password=='' || username='' || email=='')
+        {
+          document.getElementById("eresult").innerHTML = "All field Required";
+          return false;
+        }
+        else if(name.length<4){
+          document.getElementById("eresult").innerHTML = " Name Must Be At least 4 characters";
+          return false;
+        }
+        else if(username.length<7){
+          document.getElementById("eresult").innerHTML = " UserName Must Be At least 7 characters";
+          return false;
+        }
+        else if(password.length<4){
+          document.getElementById("eresult").innerHTML = " Password Must Be at Least 4 characters";
+          return false;
+      }
+      else{
+        return true;
+      }
+    }
+    </script>
+
+
+  </body>
+</html>

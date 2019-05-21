@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<title>Adventure Parks</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: monospace sans-serif}
+.w3-bar-block .w3-bar-item {padding:40px}
+h3 {font-size: 24px;}
+h1 {font-size: 100px;}
+
+#map{
+height:300px;
+width:60%;
+margin-left:20%;
+}
+</style>
+
+<body style="background-color: lightblue" ;>
+
+  <!---NAVIGATION BAR SECTION -->
+  <div id="top"></div>
+  <div id="navbar">
+
+  <div class="menu">
+    <ul>
+      <li><a href="homepg.html" target="_blank">Home</a></li>
+      <li><a href="indexfood.html" target="_blank">Restaurants</a></li>
+      <li><a href="indexSightseeing.html" target="_blank">SightSeeing</a></li>
+      <li><a href="indexMuseum.html" target="_blank">Museums</a></li>
+      <li><a href="indexMisc.html" target="_blank">Sports</a></li>
+      <li><a href=indexMisc.html target="_blank">NightLife</a></li>
+      <li><a href="indexParks.html" target="_blank">Amusements</a></li>
+      <li><a href="indexMisc.html" target="_blank">Casinos</a></li>
+  </ul>
+  </div>
+  </div>
+  <br>
+
+<div class="w3-center w3-padding-16"><h1>Adventure Parks</h1></div>
+
+<!-- !MAP! -->
+<div id="map"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:50px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="parks">
+    <div class="w3-quarter">
+      <a href="https://foursquare.com/v/six-flags-great-adventure/44f9affef964a52069381fe3"  target="_blank">
+      <img src="img/sf2.jpg" alt="Park" width="100%" height="250px"></a>
+      <h3>Six Flags Great Adventure & Safari (NJ)</h3>
+      <h6>1 1/2 hours from NYC</h6>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://foursquare.com/v/six-flags-hurricane-harbor/4bfe7bf2f7c82d7f78a08f04"  target="_blank">
+      <img src="img/sf5.jpg" alt="Water Park" width="100%" height="250px"></a>
+      <h3>Six Flags Hurricane Harbor / Water Park (NJ)</h3>
+      <h6>1 1/2 hours from NYC</h6>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://foursquare.com/coneyislandfun"  target="_blank">
+      <img src="img/ci1.jpg" alt="Coney Island" width="100%" height="250px"></a>
+      <h3>Coney Island Beach & Boardwalk, Brooklyn (NY)</h3>
+      <h6>1 hour from NYC</h6>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://foursquare.com/v/splish-splash/4c153ce8a5eb76b09304c3b7"  target="_blank">
+      <img src="img/splish2.jpg" alt="Water Park" width="100%" height="250px"></a>
+      <h3>Splish Splash Water Park, <br>Long Island (NY)</h3>
+      <h6>1 1/2 hour from NYC</h6>
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <a href="https://foursquare.com/v/rye-playland/48b3baadf964a520b3511fe3"  target="_blank">
+      <img src="img/rp1.jpg" alt="Park" width="100%" height="250px"></a>
+      <h3>Rye Playland,<br> Rye (NY)</h3>
+      <h6>1 1/2 hour from NYC</h6>
+    </div>
+  <div class="w3-quarter">
+      <a href="https://foursquare.com/v/sesame-place--entrance-sign/4c2fa7667cc0c9b64b23ec9a"  target="_blank">
+      <img src="img/sp1.jpg" alt="Park" width="100%" height="250px"></a>
+      <h3>Sesame Place,<br> Langhorne (PA)</h3>
+      <h6>1 1/2 hour from NYC</h6>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://foursquare.com/v/adventureland-amusement-park/4bd0a8a5046076b0f46d7071"  target="_blank">
+      <img src="img/al1.jpg" alt="Park" width="100%" height="250px"></a>
+      <h3>Adventureland Theme Park, Farmingdale (NY)</h3>
+      <h6>1 hour from NYC</h6>
+    </div>
+
+    <div class="w3-quarter">
+      <a href="https://foursquare.com/v/dorney-park--wildwater-kingdom/4a9c0ce9f964a520dc3520e3"  target="_blank">
+      <img src="img/dp1b.jpg" alt="Park" width="100%" height="250px"></a>
+      <h3>Dorney Park & Wildwater Kingdom, Allentown (PA)</h3>
+      <h6>1 1/2 hour from NYC</h6>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- FOOTER -->
+  <footer>
+      <div class="footer-text">
+        <p>
+            &copy; 2019, All Rights Reserved,
+            Developed by R. Pereira, S. GarciaSilva, R. Songhorian  |
+        <a href="comments.html">Like Our Site ? Rate it!</a>
+        </p>
+      </div>
+
+      <!-- SOCIALS --->
+      <div class="social">
+        <a href="https://en-gb.facebook.com/login/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/share?count=none&" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"  class="fa fa-instagram"></a>
+      </div>
+
+  </footer>
+
+  <script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+  <script>
+  function initMap(){
+    // Map options
+    var options = {
+      zoom:8,
+      center:{lat:40.7549,lng:-73.9860},
+
+    }
+
+    // New map
+    var map = new google.maps.Map(document.getElementById('map'), options);
+
+    // Listen for click on map
+    google.maps.event.addListener(map, 'click', function(event){
+      // Add marker
+      addMarker({coords:event.latLng});
+    });
+
+    // Array of markers
+    var markers = [
+      {
+        coords:{lat:40.1371,lng:-74.4402},
+        content:'<h4>Six Flags Great Adventure<br>★★★★☆</h4><h5>1 Six Flags Blvd, Jackson Township<br> New York, NJ 08527<br><a href="https://www.google.com/maps/dir//Six+Flags+Great+Adventure+lat+lng/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89c164831c62ca1d:0x2bd60c6088332f46?sa=X&ved=2ahUKEwj6--nhxJLiAhWknOAKHf-8B-0Q9RcwGnoECBEQEQ">Get Directions</a></h5>'
+      },
+      {
+        coords:{lat:40.141090,lng:-74.215633},
+        content:'<h4>Six Flags Hurricane Harbour<br>★★★★☆</h4><h5>1 Six Flags Blvd, Jackson Township<br> New York, NJ 08527<br><a href="https://www.google.com/maps/dir//Six+Flags+Hurricane+Harbor-+Water+Park,+Jackson+Township,+NJ/@40.1465494,-74.5087974,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89c163636e9bd0f3:0xfe2816f8f3c66d4a!2m2!1d-74.438757!2d40.1465705!3e2">Get Directions</a></h5>'
+      },
+      {
+        coords:{lat:40.5721,lng:-73.9793},
+        content:'<h4>Coney Island Beach<br>★★★★☆</h4><h5>37, Riegelmann Boardwalk, Brooklyn<br> New York, NY 11224<br><a href="https://www.google.com/maps/dir//Coney+Island+Beach+%26+Boardwalk/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89c244359eeaa7af:0xac009374f15c26f4?sa=X&ved=2ahUKEwjCs6n3xpLiAhVkdt8KHehdDykQ9RcwHHoECAwQEQ">Get Directions</a></h5>'
+      },
+      {
+        coords:{lat:40.921690,lng:-72.731420},
+        content:'<h4>Splish Splash Water Park<br>★★★★☆</h4><h5>2549 Splish Splash Dr, Calverton<br> New York,NY 11933<br><a href="https://www.google.com/maps/dir//Splish+Splash+Water+park+Long+Island/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89e86075773c1915:0xfd06facaa6f212c6?sa=X&ved=2ahUKEwja46zszZLiAhVxTt8KHV8dBxUQ9RcwHXoECAwQDg">Get Directions</a></h5>'
+      },
+      {
+        coords:{lat:40.1864,lng:-74.8734},
+        content:'<h4>Sesame Place, Langhorne(PA)<br>★★★★☆</h4><h5> 100 Sesame Rd <br> Langhorne, PA 19047<br><a href="https://www.google.com/maps/dir//Sesame+Place+lat+lng/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89c1515929a26dc7:0xb268058323585553?sa=X&ved=2ahUKEwjB7qnFzpLiAhUBheAKHUkPAj8Q9RcwEnoECA8QEQ">Get Directions</a></h5>'
+      },
+      {
+        coords:{lat:40.5793,lng:-75.5316},
+        content:'<h4>Dorney Park & Wildwater Kingdom<br>★★★★☆</h4><h5>3830 Dorney Park Rd<br> Allentown, PA 18104<br><a href="https://www.google.com/maps/dir//Dorney+Park+%26+Wildwater+kingdom+lat+lng/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89c4309b3e647929:0x4ecce74a41b8eb22?sa=X&ved=2ahUKEwjryJn2zpLiAhUITN8KHW3MCTYQ9RcwGnoECBAQEQ">Get Directions</a></h5>'
+      },
+      {
+        coords:{lat:40.7526,lng:-73.4198},
+        content:'<h4>Adventureland<br>★★★★☆</h4><h5>2245 Broadhollow Rd<br> Farmingdale, NY 11735<br><a href="https://www.google.com/maps/dir//Adventureland+lat+lng/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89e82aff63ce40c5:0x457d589e7c83d382?sa=X&ved=2ahUKEwjrmYPxz5LiAhXsguAKHTmXCUYQ9RcwEnoECBAQEQ">Get Directions</a></h5>'
+      },
+      {
+        coords:{lat:40.9651,lng:-73.6751},
+        content:'<h4>Rye Playland <br>★★★★☆</h4><h5> 1 Playland Pkwy<br> Rye, NY 10580<br><a href="https://www.google.com/maps/dir//Rye+Playland+lat+lng/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89c290eb3a47544d:0x35dc0149fb6df1ea?sa=X&ved=2ahUKEwiR7ISs0JLiAhUiT98KHQxtBnEQ9RcwG3oECBIQEQ">Get Directions</a></h5>'
+      }
+
+
+    ];
+
+    // Loop through markers
+    for(var i = 0;i < markers.length;i++){
+      // Add marker
+      addMarker(markers[i]);
+    }
+
+    // Add Marker Function
+    function addMarker(props){
+      var marker = new google.maps.Marker({
+        position:props.coords,
+        map:map,
+
+        //icon:props.iconImage
+      });
+
+
+
+      // Check for customicon
+      if(props.iconImage){
+        // Set icon image
+        marker.setIcon(props.iconImage);
+      }
+
+      // Check content
+      if(props.content){
+        var infoWindow = new google.maps.InfoWindow({
+          content:props.content
+        });
+
+        marker.addListener('click', function(){
+          infoWindow.open(map, marker);
+        });
+
+
+
+      }
+    }
+  }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdSfsAjOsMYGKc6EPXbWPTFbpDYi_bU0w&callback=initMap">
+  </script>
+
+
+</body>
+</html>

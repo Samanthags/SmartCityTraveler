@@ -1,0 +1,211 @@
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+<style>
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(img/central.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  color:#777;
+  font-family: sans-serif;
+  font-weight:300;
+}
+
+#login-box{
+  position:relative;
+  margin:5% auto;
+  height: 400px;
+  width: 600px;
+  border-radius: 1%;
+  background: #fff;
+  box-shadow:02px 4px rgba(0,0,0,0.5);
+}
+
+
+
+.left-box{
+  position:absolute;
+  top:0;
+  left:0;
+  box-sizing:border-box;
+  padding:40px;
+  width:300px;
+  height:400px;
+
+}
+
+h1{
+  margin: 0 0 20px 0;
+  font-weight:300;
+  font-size:28px;
+}
+
+input[type="text"],
+input[type="password"]{
+
+  display:block;
+  box-sizing:border-box;
+  margin-bottom:20px;
+  padding:4px;
+  width:220px;
+  height:32px;
+  border:none;
+  outline:none;
+  border-bottom: 1px solid #aaa;
+  font-family:sans-serif;
+  font-weight:400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+
+input[type="submit"]{
+  margin-bottom:28px;
+  width: 120px;
+  height: 32px;
+  background:#f44336;
+  border:none;
+  border-radius:2px;
+  color:#fff;
+  font-family:sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition:0.2s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+
+  background: #ff5722;
+  transition:0.2s ease;
+}
+
+.right-box{
+  position:absolute;
+  top: 0;
+  right: 0;
+  box-sizing:border-box;
+  padding:40px;
+  width:300px;
+  height:400px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(img/bg.jpeg);
+  background-size:cover;
+  background-position: center;
+}
+
+.or{
+  position:absolute;
+  top: 180px;
+  left:280px;
+  width:40px;
+  height: 40px;
+  background: #efefef;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right-box .signinwith{
+  display: block;
+  margin-bottom: 40px;
+  font-size:28px;
+  color:#fff;
+  text-align: right;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+button.social{
+  margin-bottom: 20px;
+  width:220px;
+  height: 36px;
+  border:none;
+  border-radius: 2px;
+  color: #fff;
+  font-family:sans-serif;
+  font-weight: 600;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button{
+  margin-bottom:28px;
+  width: 120px;
+  height: 32px;
+  background:#f44336;
+  border:none;
+  border-radius:2px;
+  color:#fff;
+  font-family:sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition:0.2s ease;
+  cursor: pointer;
+}
+
+
+button a:link, button a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.facebook{
+  background: #32508e;
+}
+
+.twitter{
+  background: #55acee;
+}
+
+.instagram{
+  background: #E01A60;
+}
+
+
+
+
+
+</style>
+
+
+  <div id="login-box">
+    <div class="left-box">
+      <h1>Login</h1>
+      <input type="text" name="username" placeholder="Username"/>
+      <input type="password" name="password" placeholder="Password"/>
+
+
+      <button><a href="homepg.html">Login</a></button>
+
+    </div>
+
+
+    <div class="right-box">
+    <span class="signinwith">Sign in with<br/>Social Network</span>
+    <button class="social facebook"><a  href="https://en-gb.facebook.com/login/" target="_blank">Login with FaceBook</a></button>
+    <button  class="social twitter"><a href="https://twitter.com/login?lang=en" target="_blank">Login with Twitter</a></button>
+    <button class="social instagram"><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">Login with Instagram</a></button>
+    </div>
+
+  <div class="or">OR</div>
+  </div>
+
+
+
+
+
+</body>
+</html>

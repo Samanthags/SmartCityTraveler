@@ -1,0 +1,218 @@
+
+<!DOCTYPE>
+<html>
+
+<head>
+<title>Comments</title>
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
+</head>
+<body>
+
+<style>
+
+*{box-sizing: border-box;}
+body{
+  font-family: 'Nunito', san-serif;
+  color: #fff;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(img/commentbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html{
+  font-family: 'Nunito', san-serif;
+}
+
+form{
+  max-width: 300px;
+  margin:100px auto;
+  padding: 30px 50px;
+  background:#7C2A3A;
+  border-radius:8px;
+  line-height: 0.1;
+}
+
+h1{
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+input[type="text"],
+input[type="email"],
+textarea,
+select{
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin:0;
+  outline:0;
+  padding:5px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #000;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.3) inset;
+  margin-bottom: 30px;
+}
+
+
+input:focus, textarea:focus{
+  box-shadow: 0 0 5px rgba(81,203,238,1);
+  border: 1px solid rgba(81,203,238,1);
+}
+
+select{
+  padding: 6px;
+  height:32px;
+  border-radius: 2px;
+}
+
+fieldset{
+  margin-bottom:30px;
+  border:none;
+}
+
+legend{
+  display: block;
+  margin-bottom: 8px;
+}
+
+label{
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light{
+  font-weight: 300;
+  display: inline;
+}
+
+.section{
+  background-color: #F4D35E;
+  color: #fff;
+  height: 30px;
+  width:30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,0,0,0.2);
+  border-radius: 100%;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #171738;
+ font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #171738;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+button a:link, button a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media screen and (min-width: 680px){
+  form{
+    max-width: 580px;
+  }
+}
+
+.rating{
+  position:absolute;
+  top:48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.rating input{
+  display: none;
+}
+
+.rating label{
+  display: block;
+  cursor: pointer;
+  width: 50px;
+
+}
+
+.rating label:before{
+  content: '\f005';
+  font-family: fontAwesome;
+  position: relative;
+  display: block;
+  font-size: 30px;
+  color: #101010;
+}
+
+.rating label:after{
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 30px;
+  color: gold;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+  text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+.rating label:hover:after,
+.rating input:checked ~ label:after{
+  opacity: 1;
+}
+
+
+</style>
+
+<form action="#" method="post" onsubmit="return validation();" >
+
+  <h1 style="padding-top:20px;">Comment Section</h1>
+
+<fieldset>
+
+  <label class="" for="name">Name:</label>
+  <input type="text" name="name" id="name">
+
+  <label class="" for="email">Email:</label>
+  <input type="email" name="email" id="email">
+
+  <label class="" for="bio">Comments here:</label>
+  <textarea style="padding:30px;" name="bio"></textarea>
+
+</fieldset>
+
+<div class="rating">
+  <input type="radio" name="star" id="star1"><label for="star1"></label>
+  <input type="radio" name="star" id="star2"><label for="star2"></label>
+  <input type="radio" name="star" id="star3"><label for="star3"></label>
+  <input type="radio" name="star" id="star4"><label for="star4"></label>
+  <input type="radio" name="star" id="star5"><label for="star5"></label>
+
+</div>
+
+
+<button><a href="homepg.html" name="submit" type="submit" onclick="myFunction()">Submit</a></button>
+
+</form>
+  <script>
+    function myFunction() {
+    alert("Thank you for your comment");
+    }
+  </script>
+
+</body>
+</html>
